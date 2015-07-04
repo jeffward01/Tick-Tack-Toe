@@ -1,0 +1,134 @@
+/****************************
+HEADER
+***************************/
+
+h1 {
+  margin-top: 10%;
+  margin-right: 60%;
+  color: white;
+  text-shadow: 8px 8px 14px black;
+}
+h2 {
+  margin-left: 500px;
+  color: white;
+  text-shadow: 8px 8px 14px black;
+}
+header {
+  border-bottom: 5px dotted black;
+}
+
+/****************************
+Turn Display
+***************************/
+
+body #display {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 auto;
+  color: black;
+  text-shadow: 8px 8px 14px white;
+}
+
+/****************************
+Background Info
+***************************/
+
+body {
+  text-align: center;
+  background: lightblue;
+  background-image: url("../img/pacmanimage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/****************************
+Reset Button
+***************************/
+
+#reset {
+  height: 100px;
+  width: 315px;
+  margin: 40px auto 0;
+}
+#btnReset {
+  width: 315px;
+  height: 100px;
+  border: none;
+  font-size: 70px;
+  background: pink;
+  color: yellow;
+  border-radius: 15px;
+}
+
+/****************************
+'Board' Area
+***************************/
+
+
+/****************************
+Here I set the size of each 'button' and aligned them properly.  Also I set the font size of the X/O.  I also made the mouse change to a pointer
+***************************/
+
+.row input {
+  width: 100px;
+  height: 100px;
+  font-size: 70px;
+  vertical-align: top;
+  background: none;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+/****************************
+Here I built the tick tack toe game board by making borders on specific sides.
+***************************/
+
+#btn1,
+#btn2,
+#btn4,
+#btn5 {
+  border-right: 5px solid yellow;
+  border-bottom: 5px solid yellow;
+}
+#btn3,
+#btn6 {
+  border-bottom: 5px solid yellow;
+}
+#btn7,
+#btn8 {
+  border-right: 5px solid yellow;
+}
+
+/****************************
+Audio Controls (I was tempted to not have any :p ||| Mario Music 24/7!! muhahaha)
+***************************/
+
+#audio {
+  margin: 0 auto;
+}
+
+/****************************
+Scoreboard
+***************************/
+
+.scoreBoard {
+  margin-left: 50%;
+}
+#scoreReset {
+  clear: both;
+  color: black;
+  text-align: center;
+}
+
+/*
+h4 {
+    text-decoration: underline;
+    border: none;
+    outline: 0;
+}
+
+.row input:focus {
+     eliminate blue border around button
+    outline: 0;
+*/

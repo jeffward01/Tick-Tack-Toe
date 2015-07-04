@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- My CSS stylesheet link  -->
+  <link rel="stylesheet" href="css/main.css">
+  <title> Tic Tack Toe</title>
+</head>
+<!-- Header Area  -->
+<header>
+  <div>
+    <h1>TICK-TACK-TOE </h1>
+    <h2>By: Jeff Ward</h2>
+  </div>
+</header>
+
+<body>
+  <!-- Scoreboard Area  -->
+  <div class="scoreBoard">
+    <h4>ScoreBoard</h4></div>
+  <div class="scoreBoard" id="score1"></div>
+  <div class="scoreBoard" id="score2"></div>
+  <div class="scoreBoard">
+    <input type="button" id="scoreReset" onclick="resetScore()" value="RESET Score" />
+  </div>
+  <!-- Turn Display Section  -->
+  <div id="display"></div>
+
+
+  <!-- Here I put the buttons into rows for easier organization. -->
+  <div class="row">
+    <input type="button" id="btn1" onclick="clickBtn('btn1')" />
+    <input type="button" id="btn2" onclick="clickBtn('btn2')" />
+    <input type="button" id="btn3" onclick="clickBtn('btn3')" />
+  </div>
+  <!-- Here I put the buttons into rows for easier organization. -->
+  <div class="row">
+    <input type="button" id="btn4" onclick="clickBtn('btn4')" />
+    <input type="button" id="btn5" onclick="clickBtn('btn5')" />
+    <input type="button" id="btn6" onclick="clickBtn('btn6')" />
+  </div>
+  <!-- Here I put the buttons into rows for easier organization. -->
+  <div class="row">
+    <input type="button" id="btn7" onclick="clickBtn('btn7')" />
+    <input type="button" id="btn8" onclick="clickBtn('btn8')" />
+    <input type="button" id="btn9" onclick="clickBtn('btn9')" />
+  </div>
+  <!-- This is my Reset Button, it gets its own div :) -->
+  <div id="reset">
+    <input type="button" id="btnReset" onclick="reset()" value="RESET" />
+  </div>
+  <div>
+    <!-- My Audio  -->
+    <audio id="audio" autoplay controls>
+      <source src="audio/SuperMarioBros.ogg" type="audio/ogg">
+      <source src="audio/SuperMarioBros.mp3" type="audio/mpeg">
+      <p>Your browser does not support the HTML5 Audio element.</p>
+    </audio>
+  </div>
+  <!-- Link to JS file, it loads last so that the HTML/CSS can load first and completely before the JS enters the scene -->
+  <script src="script.js"></script>
+</body>
+
+</html>
